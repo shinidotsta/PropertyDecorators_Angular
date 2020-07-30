@@ -1,0 +1,15 @@
+<div class="parent">
+  <h1>Parent Component</h1>
+  <div>
+    <input [(ngModel)]="ParentTextBoxValue" type="text" class="form-control">
+    <button class="btn btn-primary" (click)="onParentButtonClick()">Click</button>
+  </div>
+  <div>
+  child component text : {{chidtextbxValue}}
+  </div>
+</div>
+
+<div class="chid">
+  <h1>Child Component</h1>
+  <app-child [ParentValue]="ParentTextBoxValue" [ParentClick]="ParentClick" (onTextfromChild)="ReceiveData($event)"></app-child>
+</div>

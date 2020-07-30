@@ -1,0 +1,11 @@
+.child
+{
+    border: 2px solid black;
+    width:30em;
+    align-items: center;
+}
+
+.form-control
+{
+    width: 10em;
+}
